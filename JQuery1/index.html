@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- Embed JQuery -->
+    <script src="scripts/jquery-3.7.1.js"></script>
+
+    <!--CDN-->
+    <!--<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>-->
+    <script>
+        // $(document).ready is a event in jQuery, this event is happened first when the DOM loaded and ready to operate by Script
+        // This is the earliest event in page load process that is most relevant for accessing the HTML element
+        // The $ character is used to access jQuery.
+        // Syntax: $("selector").action()
+
+
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                alert('Document Object Model loaded.')
+            })
+        });
+
+                //$(document).ready(function () {
+                //    alert('Document Object Model loaded.')
+                //});
+
+                //$(window).on("load", function () {
+                //    alert('Window loaded.')
+                //});
+
+                // $(window).load function
+                // Event $(window).load is called when all DOM and entire content of page load finished
+                // window load is waiting until resources like images, CSS,... is fully loaded then this event occurs
+
+    </script>
+</head>
+<body>
+    <button id="btn1">
+        Click here
+    </button>
+</body>
+</html>
+

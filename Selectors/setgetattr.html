@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                $('#lb1').text('Click here');
+            });
+
+            $('#btn2').click(function () {        
+                $('#lb1').attr('style', 'color: red');
+                $('#txt1').val('Color is changed to RED');
+            });
+
+            $('#btn3').click(function () {
+                alert('TEST');
+                $('#txt1').val("Test");
+                $('#lb1').text($('#txt1').val());
+            });
+
+            $('#btn4').click(function () {
+                //set value for attribute
+                $('#link1').attr('href', 'http://google.com');
+                //get value attribute
+                alert($('#link1').attr('href'));
+            });
+
+            $('#btn5').click(function () {
+
+                ////To get set the value, use prop is faster and more convenience to when needed set get binary values as logical value: radio in condition check or not
+                //$('#spanProp').text($('#ck1').prop('checked')); //return value true
+
+                ////compare with value equal checked and unchecked value
+                //$('#spanAttr').text($('#ck1').attr('checked')); //return value of attribute
+
+
+                /*alert($('#ck1').val());*/
+                /*alert($('#div1').html());*/
+                alert($('#div1').text());
+            });
+        });
+    </script>
+</head>
+<body>
+    <label id="lb1"></label>
+    <input type="text" id="txt1" />
+    <a href="#" id="link1">Link 1</a>
+    <br />
+    <button id="btn1">Click here</button>
+    <button id="btn2">Change color</button>
+    <button id="btn3">Get Message</button>
+    <button id="btn4">Get the link</button>
+    <br />
+    <div id="div1">
+        <input type="checkbox" id="ck1" value="123" checked="checked" />
+        <span id="spanProp">Test html method</span>
+        <br />
+        <span id="spanAttr"></span>
+    </div>
+    <button id="btn5">Check</button>
+</body>
+</html>

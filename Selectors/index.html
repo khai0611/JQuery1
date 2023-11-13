@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let button = $('#button1')
+            button.css('background-color', 'yellow');
+            button.click(function () {
+                alert('test')
+            })
+
+            //Get element by tag
+            $('ul li').css('color', 'red')
+            alert($('ul li:first').html());
+            $('a').css('text-decoration', 'none')
+            $('a').css('color', 'orange')
+
+            //Get element by class
+            $('.title').css('border', '1px solid blue')
+            $('.title').css('text-align', 'center')
+
+            //get element by attribute
+            $('[title = "div2"]').addClass('border')
+
+            ////Operator
+            //$('[title != "div3"]').addClass('border')
+        });
+            
+    </script>
+
+    <style>
+        .border {
+            color: purple;
+            padding: 20px;
+            border: 1px solid pink;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="title">
+        This is class selector
+    </h1>
+
+    <hr />
+
+    <ul>
+        <li>Selector 1</li>
+        <li>Selector 2</li>
+        <li>Selector 3</li>
+        <li>Selector 4</li>
+        <li>Selector 5</li>
+    </ul>
+
+    <hr />
+
+    <button id="button1">
+        Click here
+    </button>
+
+    <hr />
+
+    <br />
+
+    <a href="https://google.com">Google</a>
+
+    <hr />
+    <div class="demo" title="div1">
+        <span>This is first</span>
+    </div>
+
+    <div class="demo" title="div2">
+        <span>This is second</span>
+    </div>
+
+    <div class="demo" title="div2">
+        <span>This is third</span>
+    </div>
+
+    <div class="demo" title="div3">
+        <span>This is fourth</span>
+    </div>
+
+</body>
+</html>

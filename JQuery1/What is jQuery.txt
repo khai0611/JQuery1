@@ -1,0 +1,9 @@
+﻿jQuery is a library written from JavaScript, jQuery helps build functions with Javascript easier and faster in features.
+Popular jQuery modules include:
+Ajax – handle Ajax
+Attributes – Handles the attributes of HTML objects
+Effect – handles effects
+Event – ​​event handling
+Form – handles events related to the form
+DOM – handles Data Object Model
+Selector – handles flow between HTML objects
