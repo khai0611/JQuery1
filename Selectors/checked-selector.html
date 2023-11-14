@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnSubmit').on('click', function () {
+                var rdoChecked = $('input[type="radio"]:checked');
+                if (rdoChecked.length > 0) {
+                    $('#divResult').text(rdoChecked.length  +  "radio selected");
+                }
+                else {
+                    $('#divResult').text("No radio selected")
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <label><input type="radio" name="gender" value="0" /> Male</label>
+    <label><input type="radio" name="gender" value="1" /> Female</label>
+    <br />
+    <br />
+    <input type="button" id="btnSubmit" value="Submit" />
+    <br />
+    <div id="divResult"></div>
+    <br />
+    <hr />
+
+    <label>
+        <input type="checkbox" value="C#" /> C#
+    </label>
+    <label>
+        <input type="checkbox" value="Java" /> Java
+    </label>
+    <label>
+        <input type="checkbox" value="C++" /> C++
+    </label>
+    <label>
+        <input type="checkbox" value="Python" /> Python
+    </label>
+</body>
+</html>
