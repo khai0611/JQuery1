@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="checked-selector.html" />
     <Content Include="index.html" />
     <Content Include="scripts\jquery-3.7.1.min.js" />
     <Content Include="setgetattr.html" />
